@@ -1,0 +1,132 @@
+.top{
+    width: 1300px;
+    height: 1800px;
+    background-color: black;
+    padding: 10px;
+    color: rgb(207, 161, 34);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    font-size: 13px;
+    overflow: auto;
+}
+pre{
+    margin-top: 0px;
+}
+
+.top2{
+    width: 1300px;
+    height: 150px;
+    background-color: rgb(118, 119, 114);
+    padding: 10px;
+    margin-left: -10px;
+    
+}
+
+
+.top img{
+    width: 300px;
+    height: 120px;
+    margin-left: 40px;
+}
+.top2 pre{
+    margin-left: 550px;
+    font-size: 20px; 
+    margin-top: -60px;
+}
+.top2 a{
+    text-decoration: none;
+    color: rgb(247, 245, 245);
+}
+.imgcontainer .tilel{
+    width: 300px;
+    height: 500px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    border: 5px rgb(202, 201, 201) solid;
+    border-radius: 10px;
+    
+}
+.imgcontainer .tilem{
+    width: 500px;
+    height: 500px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    border: 5px rgb(202, 201, 201) solid;
+    border-radius: 10px;
+}
+.imgcontainer{
+
+}
+.imgcontainer .tiler{
+    width: 300px;
+    height: 500px;
+    margin-bottom: 10px;
+    border: 5px rgb(202, 201, 201) solid;
+    border-radius: 10px;
+}
+.top2 a:hover, .top2 a:active{
+    background-color: black;
+    padding: 15px;
+    border: 5px rgb(202, 201, 201) solid;
+    border-radius: 10px;
+}
+.transparent{
+    width: 800px;
+    height: 140px;
+    background-color: rgba(219, 217, 217, 0.5);
+    margin-left: 100px;
+}
+.top .yellowbox{
+    width:1220px;
+    border-radius: 20px;
+}
+.list{
+    display: flex;
+    margin: 100px;
+    justify-content: space-between;
+}
+.list li{
+    width: 100px;
+    font-size: 30px;
+    color: cornsilk;
+    margin: 20px;
+     
+}
+.list ul{
+    width: 200px;
+    background-color: rgb(83, 83, 83);
+    padding: 50px;
+     
+    border-radius: 20px;
+    
+}
+.icon{
+    list-style: none;
+
+}
+.icon img{
+    width:70px;
+    height: 50px;
+    border-radius: 15px;
+}
+.h{
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: darkcyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
