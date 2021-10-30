@@ -28,14 +28,15 @@ body{
 a:link, a:visited{
     text-decoration: none;
     display: block;
-    background-color: rgb(180, 203, 245);
+    background-color: rgb(76, 103, 153);
     width: 150px;
     align-items: center;
     margin-left: 125px;
     margin-top: 30px;
     border-radius: 20px;
-    color: red;
+    color: whitesmoke;
     text-align: center;
+    border: 4px solid rgb(160, 160, 190);
 }
 input{
     width: 100%;
@@ -80,4 +81,7 @@ a:hover, a:active{
     left:685px;
     border-radius: 20px;
 
+}
+a{
+    background-color: rgb(98, 98, 201);
 }
