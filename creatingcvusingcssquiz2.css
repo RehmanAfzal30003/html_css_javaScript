@@ -1,0 +1,72 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.background{
+    width: 1200px;
+    height: 1450px;
+    background-color: rgb(238, 237, 237);
+    margin: 100px;
+    margin-left: 160px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 12px rgb(61, 61, 61,0.2);
+}
+.flex{
+    display: flex;
+    width: 1200px;
+    height : 300px;
+    background-color: rgb(106, 106, 241);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 2px 2px 12px rgb(61, 61, 61,0.2);
+    
+}
+.top{
+
+    
+    
+}
+.top img{
+    width: 210px;
+    height: 210px;
+    border: 6px solid whitesmoke;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.details{
+    margin-left: 110px;
+    margin-top: 30px;
+
+
+}
+.table{
+    margin-top: 50px;
+    margin-left: 70px;
+    padding: 50px;
+    width: 1000px;
+    height : 300px;
+    background-color: rgb(201, 201, 201);
+    border-radius: 30px;
+    box-shadow: 2px 2px 12px rgb(61, 61, 61,0.6);
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.list ul{
+    width: 200px;
+    background-color: rgb(83, 83, 83);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 30px;
+}
+ul li{
+    color: blanchedalmond;
+}
+.h{
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(226, 228, 228);
+}
+
