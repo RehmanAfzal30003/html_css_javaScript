@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        function validate(){
+            var name=document.stud_form.name;
+            if(name.value.length<=0){
+                alert("name is required");
+                name.focus();
+                return false;
+            }
+            var mobile=document.stud_form.Mobile;
+            if(mobile.value.length<=0){
+                alert("Mobile is required");
+                name.focus();
+                return false;
+            } 
+            var email=document.stud_form.Email;
+            if(email.value.length<=0){
+                alert("Email is required");
+                name.focus();
+                return false;
+            }
+            var gender=document.stud_form.gender;
+            if(gender.value.length<=0){
+                alert("gender is required");
+                name.focus();
+                return false;
+            }
+            var course=document.stud_form.course;
+            if(course.value=="select")
+            {
+                
+                alert("Course is required");
+            }
+
+            var program=document.stud_form.program;
+            if(program.value.length<=0){
+                alert("program is required");
+                name.focus();
+                return false;
+            }
+            return false;
+            
+            
+        }
+        //console.log(name);
+
+        function validateString(id){
+            var element=document.getElementById(id);
+            var regexp=/^[a-zA-Z ]{3,15}$/;
+            if(!regexp.test(element.value)){
+                alert("Enter String value");
+                return false;
+            }
+
+        }
+
+        function validateNumber(id){
+            var element=document.getElementById(id);
+            var regexp=/^[0-9]{11}$/;
+            if(!regexp.test(element.value)){
+                alert("Enter valid number");
+                return false;
+            }
+
+        }
+
+        function validateEmail(id){
+            var element=document.getElementById(id);
+            var regexp=/^[a-zA-Z0-9._]+@[a-zA-Z0-9._]+\.[a-zA-Z]{2,4}$/;
+            if(!regexp.test(element.value)){
+                alert("Enter Valid email value");
+                return false;
+            }
+
+        }
+    </script>
+    <style>
+        .bg{
+            width: 500px;
+            height: 600px;
+            background-color: rgb(230, 230, 230);
+            padding-left: 150px;
+            padding-right: 50px;
+            padding-top: 50px;
+            border-radius: 30px;
+            margin-top: 50px;
+            margin-left: 420px;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(192, 192, 191);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+
+
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">Sign up</h1>
+        <hr>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Student form</h2>
+    
+
+    
+
+        <form method="" action="" name="stud_form" onsubmit="return validate()">
+
+            <table>
+                <tr>
+                    <td><label for="">Name   :</label>
+                    <input style="padding: 10px; border: none; border-bottom: 2px solid blueviolet; border-radius: 10px;" type="text" name="name" onblur="validateString(this.id);" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Mobile:</label>
+                    <input style="padding: 10px; border: none; border-bottom: 2px solid blueviolet; border-radius: 10px;" type="text" name="Mobile" onblur="validateNumber(this.id);" id="number"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email:</label>
+                    <input style="padding: 10px; border: none; border-bottom: 2px solid blueviolet; border-radius: 10px;" type="name" name="Email" onblur="validateEmail(this.id);" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>Gender</b></label>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender" value="male" id="">Male</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender" value="female" id="">Female</td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>Course</b></label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select style="padding: 15px; color: rgb(65, 59, 59); border: none; background-color: rgb(243, 196, 196); border-radius: 10px;" name="course" id="">
+                            <option value="select">select</option>
+                            <option value="">HTML</option>
+                            <option value="">CSS</option>
+                            <option value="">JS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>Select Program</b></label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="program" id="" value="BSCS">BSCS
+                    <input type="checkbox" name="program" value="BSSE" id="">BSSE
+                    <input type="checkbox" name="program" value="BSAI" id="">BSAI</td>
+                    
+                </tr>
+                <tr>
+                    <td><input style="padding: 15px; color: whitesmoke; border: none; background-color: rgb(233, 23, 23); border-radius: 10px;" type="submit" name="submit" value="submit" onclick="validate();">
+                    <input style="padding: 15px; color: whitesmoke; border: none; background-color: rgb(35, 175, 0); border-radius: 10px;" type="reset" name="reset" value="reset"></td>
+                </tr>
+            </table>
+
+        </form>
+
+
+    </div>
+</body>
+</html>
